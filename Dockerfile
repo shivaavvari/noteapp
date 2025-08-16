@@ -22,10 +22,11 @@ copy . .
 
 #stage 6 expose the ports 
 
-expose 8002
+expose 8000
 
 
 
 #stage 7 Run the application 
 
-CMD ["python3", "app.py","--bind","0.0.0.0:8002"]
+
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
