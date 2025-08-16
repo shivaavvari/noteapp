@@ -3,13 +3,13 @@
 
         environment {
             DOCKER_IMAGE = "shivaavvari/noteapp"
-            DOCKER_CREDENTIAL_ID = "4d041999-2846-4a23-89b7-5f3e58abf6ca" // ID of your Docker Hub credentials in Jenkins
+            DOCKER_CREDENTIAL_ID = "bcc28708-1540-454d-81ea-30e7b5fd2fbc" // ID of your Docker Hub credentials in Jenkins
         }
 
         stages {
             stage('Checkout Code') {
                 steps {
-                    git url: 'https://github.com/shivaavvari/sample_app.git', branch: 'main' // Replace with your repo URL and branch
+                    git url: 'https://github.com/shivaavvari/noteapp.git', branch: 'main' // Replace with your repo URL and branch
                 }
             }
 
