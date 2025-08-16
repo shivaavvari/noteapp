@@ -3,7 +3,7 @@
 
         environment {
             DOCKER_IMAGE = "shivaavvari/noteapp"
-            DOCKER_CREDENTIAL_ID = "bcc28708-1540-454d-81ea-30e7b5fd2fbc" // ID of your Docker Hub credentials in Jenkins
+            DOCKER_CREDENTIAL_ID = "36f0820b-370e-4659-bf1b-dffe6d88f31e" // ID of your Docker Hub credentials in Jenkins
         }
 
         stages {
