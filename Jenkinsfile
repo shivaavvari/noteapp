@@ -16,7 +16,7 @@
             stage('Build Docker Image') {
                 steps {
                     script {
-                        sh "sudo docker build -t ${DOCKER_IMAGE}:${env.BUILD_NUMBER} . -y"
+                        sh "docker build -t ${DOCKER_IMAGE}:${env.BUILD_NUMBER} . "
                         sh "docker tag ${DOCKER_IMAGE}:${env.BUILD_NUMBER} ${DOCKER_IMAGE}:latest"
                     }
                 }
